@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Contactos</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TATTOOING POSADAS</h1>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="">
+            </a>
+        </div>
+        <nav class="navBar">
+
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./trabajos.html">TRABAJOS</a>
+                </li>
+                <li>
+                    <a href="./diseños.html">DISEÑOS</a>
+                </li>
+                <li>
+                    <a href="./Artista.html">SOBRE EL ARTISTA</a>
+                </li>
+                <li>
+                    <a href="./contactos.html">CONTACTOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedorMainContactos">
+
+        <form action="#">
+            <section class="contenedorForm">
+                <legend style="font-size: 30px; text-align:center">Formulario</legend>
+                <div>
+                    <label for="form__nombre">Nombre:</label>
+                    <input type="text" name="form__nombre" placeholder="Ingrese su nombre" />
+                </div>
+
+                <div>
+                    <label for="form__apellido">Apellido:</label>
+                    <input type="text" name="form__apellido" placeholder="Ingrese su apellido" />
+                </div>
+
+                <div>
+                    <label for="form__email">Email:</label>
+                    <input type="email" name="form__email" placeholder="Ingrese su Email" />
+                </div>
+
+                <div>
+                    <label for="form__estado">Estado Civil:</label>
+                    <select>
+                        <option value="">[Seleccionar]</option>
+                        <option value="c">Casado/a</option>
+                        <option value="s">Soltero/a</option>
+                        <option value="d">Divorciado/a</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Desea recibir el newsletter?<label>
+                            <input type="checkbox" name="acepta" value="1" /><br>
+                </div>
+                <div>
+                    <textarea name="comentario" id="" cols="30" rows="10"
+                        placeholder="Ingrese un comentario"></textarea>
+                </div>
+
+                <div>
+                    <input type="reset" value="Limpiar formulario">
+                    <input style="margin-left: 12px;" type="submit" value="Enviar Formulario">
+                </div>
+            </section>
+        </form>
+
+
+        <section class="contenedorDireccion">
+
+            <div class="contenedorDireccionMapa">
+                <h2>Mapa</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.0125415460448!2d-55.917956284475316!3d-27.40653818291744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be8d6d50ef4b%3A0x79dcb5a3ef6be35!2sAv.%20Salvador%20Miqueri%203353%2C%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1657379520057!5m2!1ses-419!2sar"
+                    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <div class="contenedorDireccionComoLLegar">
+                <label for="text"><Strong>COMO LLEGAR</Strong></label>
+                <p> Calle 71 n°: 6538, Posadas</p>
+            </div>
+            <div class="contenedorDireccionContacto">
+                <label for="text"><strong>DATOS DE CONTACTO</strong> </label>
+                <p> Teléfono: 952 476 811 - 646 835 944</p>
+                <p>Email: Tattooing@gmail.com</p>
+            </div>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="titulofooter">
+            <h2>Redes sociales</h2>
+        </div>
+        <div class="contenedorFooter">
+
+            <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank">
+                <img src="../images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
+                <img src="../images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="../images/youtube.png" alt="Youtube">
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=https://fb.watch/dH4A7PjVuo/" target="_blank">
+                <img src="../images/gorjeo.png" alt="Twitter">
+            </a>
+
+        </div>
+        <div class="copyfooter">
+            <p>© 2022 Acosta Mauro, todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
