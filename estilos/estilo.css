@@ -25,11 +25,34 @@ header {
 .logo {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
+    
 }
+
+.logo h1 {
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#eee, rgb(31, 31, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 
 .logo img {
     width: 12rem;
+    animation-name: animacionLogo;
+    animation-duration: 2s;
+}
+
+@keyframes animacionLogo {
+    from {
+      transform: translateX(10vh);
+      opacity: 0.1;
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 .navBar {
@@ -40,7 +63,7 @@ header {
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 li {
@@ -74,6 +97,17 @@ section {
 section img {
     border: 10px solid rgba(0, 0, 0, 0.4);
 }
+
+.contenedorMainIndex img {
+    transition-duration: .8s;
+}
+
+.contenedorMainIndex img:hover {
+    transform: scale(0.9);
+    border-radius: 5%;
+    opacity: 0.8;
+}
+
 
 section p {
     line-height: 2.1;
@@ -178,6 +212,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+}
+
+.contenedorFooter a{
+    transition-duration: .3s;
+}
+
+.contenedorFooter a:hover{
+    transform: scale(1.3);
+    opacity: 0.8;
 }
 
 footer img {
@@ -206,13 +250,22 @@ footer img {
 
 /*Footer mobile*/
 
+.contenedorDiseños section {
+    transition-duration: .8s;
+}
+
+.contenedorDiseños section:hover {
+    transform: scale(0.9);
+    border-radius: 5%;
+    opacity: 0.8;
+}
 
 
 /* areas diseños*/
 
-.seccion1Diseños h2 {
+.contenedorDiseños h2 {
     grid-area: h2DiseñoSeccion1;
-    margin: 1rem;
+    margin: 3rem;
 }
 
 .seccion1DiseñosImg1 {
@@ -465,8 +518,19 @@ footer img {
     justify-items: center;
 }
 
-.TituloEstilosEstudiados{
-    margin-top: 3rem;
+
+.contenedorEstilosEstudiados img {
+    transition-duration: .8s;
+}
+
+.contenedorEstilosEstudiados img:hover {
+    transform: scale(0.9);
+    border-radius: 5%;
+    opacity: 0.8;
+}
+
+.TituloEstilosEstudiados {
+    margin-top: 2rem;
 }
 
 .sectionOldSchool {
@@ -523,7 +587,8 @@ footer img {
     margin-top: 2rem;
 }
 
-.contenedorEstilosEstudiados section p,h2 {
+.contenedorEstilosEstudiados section p,
+h2 {
     text-align: center;
 }
 
@@ -608,17 +673,18 @@ footer img {
     .logo img {
         width: 100px;
         object-fit: cover;
+        margin-right: 4rem;
     }
 
     .logo h1 {
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
         margin-left: 1rem;
     }
 
     .navBar {
         height: 100%;
-        width: 60%;
+        width: 40%;
     }
 
     .seccion1 {
@@ -861,14 +927,14 @@ footer img {
         width: 100%;
         height: 100%;
     }
-   
+
 
     .sectionFlashes {
         margin: 2rem 0;
         padding: 0 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:  auto auto;
+        grid-template-rows: auto auto;
         gap: 1rem;
         grid-template-areas:
             'imgFlashes imgFlashes'
@@ -876,7 +942,8 @@ footer img {
         ;
         justify-items: center;
     }
-    .imgFlashes{
+
+    .imgFlashes {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
