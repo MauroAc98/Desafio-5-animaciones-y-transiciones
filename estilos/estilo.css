@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,250 +7,161 @@
 }
 
 body {
-    font-family: 'Acme', sans-serif;
-    background-color: #d6ccc2;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/fondoTatuajes.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/*  Barra de navegación mobile */
-
+footer {
+    margin-top: auto;
+}
 
 header {
-    width: 100%;
-    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.colorNav {
     background-color: #8f8e91;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
 }
 
-.logo {
+.sizeFooter {
+    font-size: small;
+    font-weight:bold;
+}
+
+.contenedorLogo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.contenedorLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: animacionLogo;
+    animation-duration: 2s;
+}
+
+.contenedorLogo a {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
     text-align: center;
-    align-items: center;
-    
-}
-
-.logo h1 {
-    font-size: 3rem;
+    width: 12rem;
     background: -webkit-linear-gradient(#eee, rgb(31, 31, 31));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
-
-.logo img {
-    width: 12rem;
-    animation-name: animacionLogo;
-    animation-duration: 2s;
-}
-
 @keyframes animacionLogo {
     from {
-      transform: translateX(10vh);
-      opacity: 0.1;
+        transform: translateX(10vh);
+        opacity: 0.1;
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
 }
 
-.navBar {
-    height: 100%;
+.imgIndex {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
 }
 
-.navBar ul {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-li {
-    list-style: none;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #d6ccc2;
-}
-
-/*  Barra de navegación mobile */
-
-main {
-    width: 100%;
-    height: 100%;
-}
-
-section {
-    width: 100%;
-    height: 100%;
-}
-
-section img {
-    border: 10px solid rgba(0, 0, 0, 0.4);
-}
 
 .contenedorMainIndex img {
-    transition-duration: .8s;
+    transition-duration: .9s;
 }
+
 
 .contenedorMainIndex img:hover {
     transform: scale(0.9);
     border-radius: 5%;
-    opacity: 0.8;
+    opacity: 0.9;
+    outline: 3px solid rgb(255, 248, 245);
+    outline-offset: -40px;
+}
+
+.contenedorFooter img {
+    transition-duration: .9s;
+}
+
+.contenedorFooter img:hover {
+    transform: scale(1.2);
 }
 
 
-section p {
-    line-height: 2.1;
-    text-align: justify;
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
 }
 
-/* areas index*/
-.seccion1 h2 {
-    grid-area: h2seccion1;
+.whatsapp-icon {
+    margin-top: 13px;
 }
 
-.seccion1_img img {
-    width: 100%;
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+@media (max-width:425px) {
+    .ulNav {
+        text-align: center;
+        
+    }
+
+    .contenedorDirContacto {
+        height: 30rem;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .contenedorTituloFormContacto{
+        height: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .sizeFooter{
+        font-size: x-small;
+    }
 }
 
-.seccion1_img {
-    grid-area: imgseccion1;
+@media(min-width:426px){
+    .ulNav {
+        text-align: center;
+    }
 }
 
-.seccion1_parrafo {
-    grid-area: parrafoseccion1;
+
+.nav-item {
+    padding: 0.2rem;
 }
-
-.seccion2_img {
-    grid-area: imgseccion2;
-}
-
-.seccion2_img img {
-    width: 100%;
-}
-
-.seccion2_parrafo {
-    grid-area: parrafoseccion2;
-}
-
-.seccion3_img {
-    grid-area: imgseccion3;
-}
-
-.seccion3_img img {
-    width: 100%;
-}
-
-.seccion3_parrafo {
-    grid-area: parrafoseccion3;
-}
-
-/* areas index*/
-
-/* Grilla mobile index*/
-
-.seccion1 {
-    margin: 1rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'h2seccion1'
-        'imgseccion1'
-        'parrafoseccion1'
-    ;
-    justify-items: center;
-}
-
-.seccion2 {
-    margin: 1rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'imgseccion2'
-        'parrafoseccion2'
-    ;
-    justify-items: center;
-}
-
-.seccion3 {
-    margin: 1rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'imgseccion3'
-        'parrafoseccion3'
-    ;
-    justify-items: center;
-}
-
-/* Grilla mobile index*/
-
-
-/*Footer mobile*/
-footer {
-    background-color: #8f8e91;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-
-.contenedorFooter a{
-    transition-duration: .3s;
-}
-
-.contenedorFooter a:hover{
-    transform: scale(1.3);
-    opacity: 0.8;
-}
-
-footer img {
-    width: 100%;
-}
-
-.contenedorFooter {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-}
-
-.titulofooter {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-}
-
-.copyfooter {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
-
-/*Footer mobile*/
 
 .contenedorDiseños section {
     transition-duration: .8s;
@@ -331,21 +244,25 @@ footer img {
     margin: 3rem;
     display: flex;
     justify-content: space-evenly;
+    list-style-type: none;
 }
 
 .seccion5DiseñosPaginacion a {
     padding: 10px 15px;
-    background-color: #024959;
+    background-color: #8f8e91;
     text-decoration: none;
-    color: #d6ccc2;
     font-size: large;
 }
 
+
+
 /* areas diseños*/
 
+
 .seccion5DiseñosPaginacion a:hover {
-    background: #037E8C;
+    background:#79787c;
 }
+
 
 .seccion1DiseñosImg1 img {
     width: 100%;
@@ -437,86 +354,7 @@ footer img {
 
 /* grilla diseños*/
 
-/* areas contactos*/
 
-.contenedorMainContactos {
-    grid-area: mainContactos;
-}
-
-.contenedorForm {
-    grid-area: itemsForm;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 32rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contenedorDireccion {
-    grid-area: contenerDireccion;
-}
-
-.contenedorDireccionMapa {
-    grid-area: mapaDireccion;
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 20rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contenedorDireccionComoLLegar {
-    grid-area: Comollegar;
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    height: 5rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contenedorDireccionContacto {
-    grid-area: contacto;
-    display: flex;
-    flex-direction: column;
-    width: 15rem;
-    height: 8rem;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-/* areas contactos*/
-
-.contenedorMainContactos {
-    margin: 3rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'itemsForm'
-        'contenerDireccion'
-    ;
-    justify-items: center;
-}
-
-.contenedorDireccion {
-    margin: 1rem 0;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2rem;
-    grid-template-areas:
-        'mapaDireccion'
-        'Comollegar'
-        'contacto'
-    ;
-    justify-items: center;
-}
 
 
 .contenedorEstilosEstudiados img {
@@ -610,82 +448,8 @@ h2 {
 }
 
 
-/* TABLET */
-@media screen and (min-width: 600px) {
-    header {
-        width: 100%;
-        height: 10vh;
-        background-color: #8f8e91;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 0 1rem;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        width: 20%;
-        margin-bottom: 2rem;
-        align-items: center;
-    }
-
-    .logo h1 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 1rem;
-    }
-
-    .logo img {
-        width: 100px;
-        object-fit: cover;
-    }
-
-    .navBar {
-        height: 100%;
-        width: 60%;
-    }
-
-    .navBar ul {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    li {
-        font-size: 0.9rem;
-    }
-}
-
-
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
-    .logo {
-        display: flex;
-        height: 10vh;
-        margin-bottom: 2rem;
-    }
-
-    .logo img {
-        width: 100px;
-        object-fit: cover;
-        margin-right: 4rem;
-    }
-
-    .logo h1 {
-        font-size: 2rem;
-        text-align: center;
-        margin-left: 1rem;
-    }
-
-    .navBar {
-        height: 100%;
-        width: 40%;
-    }
 
     .seccion1 {
         margin: 1rem 0 3rem 0;
@@ -807,35 +571,6 @@ h2 {
     .seccion5DiseñosPaginacion ul {
         width: 40%;
     }
-
-
-    .contenedorMainContactos {
-        margin: 2rem 0;
-        padding: 0 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 1rem;
-        grid-template-areas:
-            'itemsForm contenerDireccion'
-        ;
-        justify-items: center;
-    }
-
-    .contenedorDireccion {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-
-        grid-template-areas:
-            'mapaDireccion'
-            'Comollegar'
-            'contacto'
-        ;
-
-    }
-
-
 
     .sectionOldSchool {
         margin: 2rem 0;
