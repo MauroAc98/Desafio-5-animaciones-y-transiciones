@@ -1,0 +1,18 @@
+.contenedorDiseños {
+    img {
+        width: 23rem;
+        height: 24rem;
+        object-fit: fill;
+    }
+
+    .col{
+        @media (max-width:425px) {
+            margin-top:$marginTopDiseño;
+        }
+
+        @media(min-width:426px){
+            margin-top:$marginTopDiseño;
+        }
+    }
+
+}

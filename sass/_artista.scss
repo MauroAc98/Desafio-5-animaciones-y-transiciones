@@ -1,0 +1,13 @@
+.contenedorEstilosEstudiados{
+    .col{
+        @media (max-width:425px) {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media(min-width:426px) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import "variables";
+@import "encabezado";
+@import "index";
+@import "contacto";
+@import "disenos";
+@import "trabajos";
+@import "artista";
+@import "pieDePagina";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/fondoTatuajes.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.card {
+    transition-duration: .9s;
+
+    &:hover {
+        transform: scale(1.1);
+        border-radius: 5%;
+    }
+
+    img {
+        transition-duration: .9s;
+
+        &:hover {
+            transform: scale(1);
+            outline: 2px solid rgba(255, 255, 255, 0.33);
+            outline-offset: -10px;
+        }
+    }
+}
+

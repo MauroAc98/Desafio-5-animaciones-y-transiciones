@@ -8,13 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="stylesheet" href="../estilos/style.css">
     <title>trabajos</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light colorNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="contenedorLogo">
                     <h1>TATTOOING POSADAS</h1>
@@ -27,7 +27,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto d-flex justify-content-between me-4 ulNav">
+                    <ul class="navbar-nav ms-auto d-flex justify-content-between me-4">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                         </li>
@@ -50,17 +50,17 @@
     </header>
 
     <main>
-        <div class="contenedor__tattoo__galeria">
+        <section class="contenedorFotosTrabajos">
             <div class="container text-center">
                 <div class="row mt-5">
-                    <div class="col estiloFondo">
+                    <div class="col">
                         <h2 class="display-5 fw-bold">GALERIA DE TRABAJOS</h2>
                         <p>& comentarios de la gente</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col margin d-flex justify-content-center">
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo1.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="col margin d-flex justify-content-center">
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo2.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -77,7 +77,7 @@
                     </div>
                     <div class="col margin d-flex justify-content-center">
 
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo3.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -89,7 +89,7 @@
                 <div class="row">
 
                     <div class="col margin d-flex justify-content-center">
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo4.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -98,7 +98,7 @@
 
                     </div>
                     <div class="col margin d-flex justify-content-center">
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo5.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -108,7 +108,7 @@
                     </div>
                     <div class="col margin d-flex justify-content-center">
 
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo6.png" style="width: 22rem; height: 22rem; object-fit: fill;;"
                                     alt="">
@@ -121,7 +121,7 @@
                 <div class="row">
                     <div class="col margin d-flex justify-content-center">
 
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo7.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -132,7 +132,7 @@
                     </div>
                     <div class="col margin d-flex justify-content-center">
 
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo8.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -143,7 +143,7 @@
                     </div>
                     <div class=" col margin d-flex justify-content-center">
 
-                        <div class="card colorCardTrabajos" style="width: 24rem;">
+                        <div class="card" style="width: 24rem;">
                             <div class="card-body">
                                 <img src="../images/tattoo9.png" style="width: 22rem; height: 22rem; object-fit: fill;"
                                     alt="">
@@ -153,6 +153,10 @@
 
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="containerCarousel">
+            <div class="container container text-center">
                 <div class="row margin mb-5" style="background-color: rgba(0, 0, 0, 0.11); height: 5.3rem;">
                     <div class="col">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -160,27 +164,27 @@
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
 
-                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
+                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
 
-                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
+                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
+                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="3" aria-label="Slide 4"></button>
 
-                                <button  class="bg-black"class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                <button class="bg-black" class="bg-black" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
                                     aria-label="Slide 5"></button>
 
-                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
+                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="5" aria-label="Slide 6"></button>
 
-                                <button  class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                                    aria-label="Slide 7"></button>
+                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="6" aria-label="Slide 7"></button>
 
-                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                                    aria-label="Slide 8"></button>
-                                
+                                <button class="bg-black" type="button" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="7" aria-label="Slide 8"></button>
 
                             </div>
                             <div class="carousel-inner">
@@ -213,12 +217,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </main>
 
     <footer class="contenedorFooter">
 
-        <div class="container-fluid text-center d-flex flex-column align-items-center colorNav">
+        <div class="container-fluid text-center d-flex flex-column align-items-center">
 
             <div class="row w-50 mt-2">
                 <div class="col">
@@ -243,7 +248,7 @@
                 </div>
             </div>
             <div class="row mt-3">
-                <h6 class="sizeFooter">Copyright © 2022 Acosta Mauro Hernán. Reservados todos los derechos..</h6>
+                <h6>Copyright © 2022 Acosta Mauro Hernán. Reservados todos los derechos..</h6>
             </div>
             <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!" class="whatsapp"
                 target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>

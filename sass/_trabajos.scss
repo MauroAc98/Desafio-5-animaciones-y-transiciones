@@ -1,0 +1,25 @@
+.contenedorFotosTrabajos {
+   
+    .col {
+        @media (max-width:425px) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media(min-width:426px) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.containerCarousel {
+    .slide {
+        margin-top: 10px;
+
+        img {
+            height: 4rem;
+            object-fit: fill;
+        }
+    }
+}

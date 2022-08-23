@@ -1,0 +1,29 @@
+.contenedorMainIndex {
+    img {
+        width: 24rem;
+        height: 28rem;
+        object-fit: fill;
+
+        @media (max-width:425px) {
+            width: 22rem;
+            height: 28rem;
+            object-fit: fill;
+        }
+    }
+
+    h2,
+    p {
+        background-color: $estiloFondo;
+    }
+
+    .card {
+        @media (max-width:425px) {
+            width: 24rem;
+        }
+
+        @media(min-width:426px) {
+            width: 26rem;
+        }
+    }
+
+}
