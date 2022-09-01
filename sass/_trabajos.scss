@@ -1,14 +1,16 @@
 .contenedorFotosTrabajos {
-   
+
+    @mixin margenes ($top, $bottom) {
+        margin-top: $top;
+        margin-bottom: $bottom;
+    }
     .col {
         @media (max-width:425px) {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            @include margenes(2rem, 2rem);
         }
 
         @media(min-width:426px) {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            @include margenes(2rem, 2rem);
         }
     }
 }
