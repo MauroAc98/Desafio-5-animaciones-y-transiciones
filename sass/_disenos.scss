@@ -1,18 +1,45 @@
 .contenedorDiseños {
-    img {
-        width: 23rem;
-        height: 24rem;
-        object-fit: fill;
+  
+    .row {
+        .col {
+            display: flex;
+            justify-content: space-around;
+
+            @media (max-width:425px) {
+                margin-top: $marginTopDiseño;
+            }
+
+            @media(min-width:426px) {
+                margin-top: $marginTopDiseño;
+            }
+
+            .card {
+                
+                @media(min-width:1024px)and (max-width:1440px)  {
+                    width:18rem;
+                }
+                width: 23rem;
+                img {
+                  
+                    @media(min-width:1024px) and (max-width:1440px) {
+                        width:18rem;
+                        height: 16rem;
+                    }
+                    width: 23rem;
+                    height: 24rem;
+                    object-fit: fill;
+                }
+            
+            }
+        }
     }
 
-    .col{
-        @media (max-width:425px) {
-            margin-top:$marginTopDiseño;
-        }
-
-        @media(min-width:426px){
-            margin-top:$marginTopDiseño;
-        }
+    
+}
+.contenedorPaginacion{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    ul{
+        background-color: rgba(0, 0, 0, 0.15);
     }
-
 }

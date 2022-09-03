@@ -4,24 +4,59 @@
         margin-top: $top;
         margin-bottom: $bottom;
     }
-    .col {
-        @media (max-width:425px) {
-            @include margenes(2rem, 2rem);
-        }
 
-        @media(min-width:426px) {
-            @include margenes(2rem, 2rem);
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include margenes(2rem, 2rem);
+
+        .card {
+            @media(min-width:768px)and (max-width:1024px) {
+                width: 40rem;
+                height: 40rem;
+            }
+
+            @media(min-width:1024px)and (max-width:1440px)  {
+                width:18rem;
+                height: 18rem;
+            }
+            width: 24rem;
+            height: 24rem;
+            .card-body {
+                img {
+                    @media(min-width:768px)and (max-width:1024px) {
+                        width: 38rem;
+                        height: 38rem;
+                    }
+                    @media(min-width:1024px) and (max-width:1440px) {
+                        width:16rem;
+                        height: 16rem;
+                    }
+                    width: 22rem;
+                    height: 22rem;
+                    object-fit: fill;
+                }
+            }
         }
     }
 }
 
 .containerCarousel {
-    .slide {
-        margin-top: 10px;
+    .row {
+        background-color: rgba(0, 0, 0, 0.11);
+        height: 5.3rem;
 
-        img {
-            height: 4rem;
-            object-fit: fill;
+        .slide {
+            margin-top: 10px;
+
+            img {
+                height: 4rem;
+                object-fit: fill;
+            }
         }
     }
+
 }

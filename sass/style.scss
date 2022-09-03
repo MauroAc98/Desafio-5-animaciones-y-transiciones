@@ -8,19 +8,33 @@
 @import "artista";
 @import "pieDePagina";
 
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: vtks;
+    src: url('../font-title/vtks-tatuage2.regular.ttf'), ;
+}
+
 body {
     font-family: 'Cinzel', serif;
     background-image: url(../images/fondoTatuajes.png);
-   
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    h1 {
+        font-family: vtks;
+        font-size: 3rem;
+        font-weight: 900;
+        text-shadow: rgba(2, 2, 2, 0.342) 0.1em 0.1em 0.2em;
+    }
 }
 
 .card {
@@ -41,4 +55,3 @@ body {
         }
     }
 }
-

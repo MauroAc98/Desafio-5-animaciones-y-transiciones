@@ -1,13 +1,32 @@
-.contenedorEstilosEstudiados{
-    .col{
-        @media (max-width:425px) {
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        @media(min-width:426px) {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+.contenedorEstilosEstudiados {
+    .row{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        .col {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+    
+            @media (max-width:425px) {
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+    
+            @media(min-width:426px) {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+    
+            .card {
+                width: 20rem;
+    
+                img {
+                    width: 20rem;
+                    height: 20rem;
+                    object-fit: fill;
+                }
+            }
         }
     }
+   
 }

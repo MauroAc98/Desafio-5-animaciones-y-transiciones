@@ -4,7 +4,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 30;
   background-color: rgba(112, 112, 112, 0.9);
 }
 header .contenedorLogo {
@@ -33,38 +33,26 @@ header .contenedorLogo a {
   width: 80px;
   height: 80px;
 }
-@media (max-width: 425px) {
-  header ul {
-    text-align: center;
-  }
-}
-@media (min-width: 426px) {
-  header ul {
-    text-align: center;
-    margin-right: 1rem;
-  }
-}
-header ul li {
+header .collapse ul li {
   display: inline-flex;
   justify-content: center;
-  padding: 0.2rem;
 }
-header ul li a {
+header .collapse ul li a {
   position: relative;
 }
-header ul li a:hover, header ul li a.activo {
+header .collapse ul li a:hover, header .collapse ul li a.activo {
   color: #eee !important;
 }
-header ul li a:hover::before, header ul li a.activo::before {
+header .collapse ul li a:hover::before, header .collapse ul li a.activo::before {
   width: 85%;
   opacity: 1;
 }
 @media (max-width: 425px) {
-  header ul li a:hover::before, header ul li a.activo::before {
+  header .collapse ul li a:hover::before, header .collapse ul li a.activo::before {
     width: 100%;
   }
 }
-header ul li a::before {
+header .collapse ul li a::before {
   content: "";
   border-bottom: 2px solid rgb(155, 155, 155);
   position: absolute;
@@ -72,11 +60,6 @@ header ul li a::before {
   width: 0;
   transition: 0.8s;
   opacity: 0;
-}
-@media (max-width: 425px) {
-  header ul li {
-    font-size: x-large;
-  }
 }
 
 @-webkit-keyframes animacionLogo {
@@ -97,6 +80,10 @@ header ul li a::before {
   to {
     transform: translateX(0);
   }
+}
+.contenedorMainIndex .sectionImgArtistaLocal .container .row {
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 425px) {
   .contenedorMainIndex .sectionImgArtistaLocal .container .row {
@@ -119,6 +106,11 @@ header ul li a::before {
 .contenedorMainIndex .sectionImgArtistaLocal .container .row .contenedorArtista {
   padding: 0;
   width: 23.2%;
+}
+@media (min-width: 1024px) {
+  .contenedorMainIndex .sectionImgArtistaLocal .container .row .contenedorArtista {
+    background-color: rgba(0, 0, 0, 0.171);
+  }
 }
 @media (max-width: 425px) {
   .contenedorMainIndex .sectionImgArtistaLocal .container .row .contenedorArtista {
@@ -218,27 +210,46 @@ header ul li a::before {
 }
 .contenedorMainIndex .contenedorConoceArtista {
   margin-top: 6rem;
-  margin-bottom: 6rem;
 }
-.contenedorMainIndex .contenedorConoceArtista p {
+.contenedorMainIndex .contenedorConoceArtista .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenedorMainIndex .contenedorConoceArtista .row .col img {
+  width: 90px;
+}
+.contenedorMainIndex .contenedorConoceArtista .row .col h1 {
+  text-shadow: rgba(60, 60, 60, 0.3) 0.1em 0.1em 0.1em;
+}
+@media (max-width: 425px) {
+  .contenedorMainIndex .contenedorConoceArtista .row .col h1 {
+    font-size: 2.2rem;
+  }
+}
+.contenedorMainIndex .contenedorConoceArtista .contenedorParrafoIndex {
+  line-height: 2.5;
+}
+.contenedorMainIndex .contenedorConoceArtista .contenedorParrafoIndex p {
   background-color: rgba(255, 255, 255, 0.35);
   font-size: 1.1rem;
 }
-.contenedorMainIndex .contenedorConoceArtista p strong {
+.contenedorMainIndex .contenedorConoceArtista .contenedorParrafoIndex p strong {
   font-size: 1.2rem;
   text-shadow: rgba(60, 60, 60, 0.3) 0.1em 0.1em 0.1em;
 }
 @media (max-width: 425px) {
-  .contenedorMainIndex .contenedorConoceArtista p {
+  .contenedorMainIndex .contenedorConoceArtista .contenedorParrafoIndex p {
     font-size: 15px;
+    width: 80%;
   }
 }
-.contenedorMainIndex .contenedorConoceArtista h2 {
-  text-shadow: rgba(60, 60, 60, 0.3) 0.1em 0.1em 0.1em;
-}
 @media (max-width: 425px) {
-  .contenedorMainIndex .contenedorConoceArtista h2 {
-    font-size: 2.2rem;
+  .contenedorMainIndex .contenedorConoceArtista .contenedorParrafoIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -294,25 +305,36 @@ header ul li a::before {
   -webkit-text-fill-color: transparent;
 }
 
-.container-contacto h2, .container-contacto p {
+.container-contacto h2,
+.container-contacto p {
   background-color: rgba(255, 255, 255, 0.35);
 }
 .container-contacto .contenedorDirContacto {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.35);
 }
 @media (max-width: 425px) {
   .container-contacto .contenedorDirContacto {
     height: 30rem;
     margin-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     text-align: center;
   }
 }
 .container-contacto .estiloFormContactos {
   border: 6px solid rgba(0, 0, 0, 0.11);
   background-color: rgba(255, 255, 255, 0.35);
+}
+.container-contacto .estiloFormContactos .cuerpoForm div {
+  margin-bottom: 2rem;
+}
+.container-contacto .estiloFormContactos .contenedorTituloFormContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 @media (max-width: 425px) {
   .container-contacto .estiloFormContactos .contenedorTituloFormContacto {
@@ -324,57 +346,141 @@ header ul li a::before {
     margin-bottom: 1rem;
   }
 }
+.container-contacto .ubicacion {
+  margin-bottom: 2rem;
+}
+.container-contacto .ubicacion iframe {
+  border: 6px solid rgba(0, 0, 0, 0.11);
+}
 
-.contenedorDiseños img {
+.contenedorDiseños .row .col {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 425px) {
+  .contenedorDiseños .row .col {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 426px) {
+  .contenedorDiseños .row .col {
+    margin-top: 3rem;
+  }
+}
+.contenedorDiseños .row .col .card {
+  width: 23rem;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorDiseños .row .col .card {
+    width: 18rem;
+  }
+}
+.contenedorDiseños .row .col .card img {
   width: 23rem;
   height: 24rem;
   -o-object-fit: fill;
      object-fit: fill;
 }
-@media (max-width: 425px) {
-  .contenedorDiseños .col {
-    margin-top: 3rem;
-  }
-}
-@media (min-width: 426px) {
-  .contenedorDiseños .col {
-    margin-top: 3rem;
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorDiseños .row .col .card img {
+    width: 18rem;
+    height: 16rem;
   }
 }
 
-@media (max-width: 425px) {
-  .contenedorFotosTrabajos .col {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.contenedorPaginacion {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.contenedorPaginacion ul {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.contenedorFotosTrabajos .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contenedorFotosTrabajos .col .card {
+  width: 24rem;
+  height: 24rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedorFotosTrabajos .col .card {
+    width: 40rem;
+    height: 40rem;
   }
 }
-@media (min-width: 426px) {
-  .contenedorFotosTrabajos .col {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorFotosTrabajos .col .card {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+.contenedorFotosTrabajos .col .card .card-body img {
+  width: 22rem;
+  height: 22rem;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedorFotosTrabajos .col .card .card-body img {
+    width: 38rem;
+    height: 38rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorFotosTrabajos .col .card .card-body img {
+    width: 16rem;
+    height: 16rem;
   }
 }
 
-.containerCarousel .slide {
+.containerCarousel .row {
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 5.3rem;
+}
+.containerCarousel .row .slide {
   margin-top: 10px;
 }
-.containerCarousel .slide img {
+.containerCarousel .row .slide img {
   height: 4rem;
   -o-object-fit: fill;
      object-fit: fill;
 }
 
+.contenedorEstilosEstudiados .row {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.contenedorEstilosEstudiados .row .col {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 @media (max-width: 425px) {
-  .contenedorEstilosEstudiados .col {
+  .contenedorEstilosEstudiados .row .col {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
 }
 @media (min-width: 426px) {
-  .contenedorEstilosEstudiados .col {
+  .contenedorEstilosEstudiados .row .col {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+}
+.contenedorEstilosEstudiados .row .col .card {
+  width: 20rem;
+}
+.contenedorEstilosEstudiados .row .col .card img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 footer {
@@ -394,6 +500,8 @@ footer .container-fluid {
 }
 footer .container-fluid p {
   margin: 0;
+  line-height: 2.1;
+  padding: 8px;
 }
 footer .container-fluid h4 {
   background: -webkit-linear-gradient(#eee, rgb(255, 247, 247));
@@ -485,12 +593,22 @@ footer .contenedorContacto i {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: vtks;
+  src: url("../font-title/vtks-tatuage2.regular.ttf");
+}
 body {
   font-family: "Cinzel", serif;
   background-image: url(../images/fondoTatuajes.png);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+body h1 {
+  font-family: vtks;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: rgba(2, 2, 2, 0.342) 0.1em 0.1em 0.2em;
 }
 
 .card {
