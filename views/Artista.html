@@ -18,238 +18,224 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+        </div>
+
+    </nav>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <div class="contenedorLogo">
-                    <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                        <img src="../images/logo.png" alt="">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./trabajos.html">TRABAJOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./disenos.html">DISEÑOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link activo" href="./Artista.html">ARTISTA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactos.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header shadow">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
             </div>
-        </nav>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./trabajos.html">TRABAJOS</a></li>
+                    <li><a href="./disenos.html">DISEÑOS</a></li>
+                    <li><a class="active" href="./Artista.html">ARTISTA</a></li>
+                    <li><a href="./contactos.html">CONTACTO</a></li>
+                </ul>
+
+            </div>
+        </div>
     </header>
     <div class="container-fluid text-center">
         <div class="row mt-5">
             <div class="col">
-                <h1 class="display-5 fw-bold">ESTILOS</h1>
+                <h1>ESTILOS</h1>
                 <p>PUESTO EN PRACTICA & ESTUDIO</p>
             </div>
         </div>
     </div>
-    <main class="contenedorEstilosEstudiados">
+    <main class="contenedorEstilosEstudiados ">
 
-        <div class="container-fluid text-center">
-
-            <div class="row">
-
-                <div class="col">
-                    <div class="card">
-                        <img src="../images/tatuaje_tradicional.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h3 class="card-title">OLD SCHOOL</h3>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            Saber más
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse "
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Es una referencia al estilo tradicional estadounidense, caracterizado por
-                                                líneas negras gruesas. La
-                                                elección de los diseños eran simples y se atribuían al gran número de
-                                                marineros que, en
-                                                aquella época —mediados del siglo XX—, gustaban de adornar su cuerpo.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="../images/chicano.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="accordion" id="accordionExample">
-                                <h3 class="card-title">CHICANO</h3>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Saber más
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>El estilo de tatuaje chicano está muy relacionado con la realidad de la
-                                                calle y de los suburbios o incluso ghettos que durante mucho tiempo
-                                                fueron el pan de cada día de las poblaciones inmigrantes más
-                                                desfavorecidas.</p>
-                                        </div>
-                                    </div>
-                                </div>
+        <div class="card">
+            <img src="../images/tatuaje_tradicional.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">OLD SCHOOL</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Saber más
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Es una referencia al <strong>estilo tradicional estadounidense</strong>,
+                                    caracterizado por
+                                    líneas negras gruesas. La
+                                    elección de los diseños eran simples y se atribuían al gran número de
+                                    marineros que, en
+                                    aquella época —mediados del siglo XX—, gustaban de adornar su cuerpo.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="../images/flash tattoo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="accordion" id="accordionExample">
-                                <h3 class="card-title">FLASH TATTOO</h3>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Saber más
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>Un “Flash Tattoo” es un diseño impreso o dibujado en papel. Generalmente,
-                                                suelen estar expuestos en las paredes de los estudios de tatuaje o en
-                                                carpetas para darles ideas a los clientes.
-                                                La mayoría de diseños están pensados para ser tatuados rápidamente y sin
-                                                cita previa.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card">
-                        <img src="../images/lettering.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="accordion" id="accordionExample">
-                                <h3 class="card-title">LETTERING</h3>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            Saber más
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse"
-                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <p>El tatuaje "LETTERING" es una técnica que consiste en dar a las letras un
-                                                trazo singular y atractivo, con el objetivo de transmitir sensaciones
-                                                que acompañen y potencien el significado de la palabra o frase.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+
+
+
+        <div class="card">
+            <img src="../images/chicano.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion" id="accordionExample">
+                    <h3 class="card-title">CHICANO</h3>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Saber más
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>El estilo de <strong>tatuaje chicano</strong> está muy relacionado con la realidad de
+                                    la
+                                    calle y de los suburbios o incluso ghettos que durante mucho tiempo
+                                    fueron el pan de cada día de las poblaciones inmigrantes más
+                                    desfavorecidas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="../images/flash tattoo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion" id="accordionExample">
+                    <h3 class="card-title">FLASH</h3>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Saber más
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Un <strong>“Flash Tattoo”</strong> es un diseño impreso o dibujado en papel.
+                                    Generalmente,
+                                    suelen estar expuestos en las paredes de los estudios de tatuaje o en
+                                    carpetas para darles ideas a los clientes.
+                                    La mayoría de diseños están pensados para ser tatuados rápidamente y sin
+                                    cita previa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="../images/lettering.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="accordion" id="accordionExample">
+                    <h3 class="card-title">LETTERING</h3>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Saber más
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>El <strong>tatuaje "LETTERING"</strong> es una técnica que consiste en dar a las
+                                    letras un
+                                    trazo singular y atractivo, con el objetivo de transmitir sensaciones
+                                    que acompañen y potencien el significado de la palabra o frase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
+        <div class="col">
+            <h4>TATTOOING POSADAS</h4>
+            <div class="descripcion-footer">
+                <p>Descubrí la inspiración en los trabajos realizados y animate a visitar el estudio para elegir que te
+                    gustaría tatuarte.</p>
+            </div>
 
-        <div class="container-fluid">
+        </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <h4 class="m-0">TATTOOING POSADAS</h4>
-                    <div class="h-75">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Accusantium magni quasi
-                            perspiciatis, ad
-                            autem!</p>
-                    </div>
+        <div class="col">
+            <h4>DATOS DE CONTACTO</h4>
+            <div class="info-contacto">
+                <p class="bi bi-telephone-fill"> Teléfono: +549 3764-814979 </p>
+                <p class="bi bi-geo-alt-fill"> Calle 71 n°: 6538, Posadas Misiones </p>
+                <p class="bi bi-envelope-fill"> Tattooing@gmail.com</p>
+            </div>
+        </div>
 
-                </div>
+        <div class="col">
+            <h4>APARTADOS WEB</h4>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./trabajos.html">TRABAJOS</a>
+                </li>
+                <li>
+                    <a href="./disenos.html">DISEÑOS</a>
+                </li>
+                <li>
+                    <a class="activo" href="./Artista.html">ARTISTA</a>
+                </li>
+                <li>
+                    <a href="./contactos.html">CONTACTO</a>
+                </li>
+            </ul>
 
-                <div class="col-sm ">
-                    <h4 class="m-0">DATOS DE CONTACTO</h4>
-                    <div class="contenedorContacto">
-                        <i class="bi bi-telephone-fill"> Teléfono: 952 476 811 - 646 835 944</i>
-                        <i class="bi bi-geo-alt-fill"> Calle 71 n°: 6538, Posadas Misiones </i>
-                        <i class="bi bi-envelope-fill"> Tattooing@gmail.com</i>
-                    </div>
-                </div>
+        </div>
 
-                <div class="col-sm ">
-                    <h4>APARTADOS WEB</h4>
-                    <ul class="p-0 contenedorApartadoWeb">
-                        <li>
-                            <a href="../index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="../views/trabajos.html">TRABAJOS</a>
-                        </li>
-                        <li>
-                            <a href="../views/disenos.html">DISEÑOS</a>
-                        </li>
-                        <li>
-                            <a class="activo" href="../views/Artista.html">ARTISTA</a>
-                        </li>
-                        <li>
-                            <a href="../views/contactos.html">CONTACTO</a>
-                        </li>
-                    </ul>
 
-                </div>
-
-                <div class="col-sm">
-
-                    <div class="redesFooter">
-                        <h4>SEGUINOS EN</h4>
-                        <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank"><i
-                                class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!"
-                    class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <div class="col">
+            <h4>SEGUINOS EN</h4>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
+                    <i class="bi bi-instagram"></i>
                 </a>
             </div>
+
+        </div>
+
+        <div class="col">
+            <p class="diseñado"> DISEÑO: ACOSTA MAURO</p>
+        </div>
+
+
+        <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!" class="whatsapp"
+            target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+        </div>
 
     </footer>
     <!-- JavaScript Bundle with Popper -->

@@ -20,119 +20,109 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+        </div>
+
+    </nav>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <div class="contenedorLogo">
-                    <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                        <img src="../images/logo.png" alt="">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./trabajos.html">TRABAJOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link activo" href="./disenos.html">DISEÑOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Artista.html">ARTISTA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactos.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header shadow">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                    <a href="../index.html"><img src="../images/logo.png" alt=""></a>
             </div>
-        </nav>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./trabajos.html">TRABAJOS</a></li>
+                    <li><a class="active" href="./disenos.html">DISEÑOS</a></li>
+                    <li><a href="./Artista.html">ARTISTA</a></li>
+                    <li><a href="./contactos.html">CONTACTO</a></li>
+                </ul>
+
+            </div>
+        </div>
     </header>
     <main>
+
+        <section class="titulo">
+            <h1>DISEÑOS Y PRESUPUESTOS</h1>
+        </section>
+
         <section class="contenedorDiseños">
-            <div class="container-fluid text-center">
-                <div class="row">
-                    <div class="col estiloFondo">
-                        <h1 class="display-5 fw-bold ">DISEÑOS Y PRESUPUESTOS</h1>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <img src="../images/rana_japonesa.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4>KAERU</h4>
-                                <p class="card-text">En la cultura Japonesa, la rana posee el significado de retorno,
-                                    Es decir, las cosas buenas regresan.</p>
-                                <h5 class="card-title">$5500,00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="../images/japonesa.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4>PIN UP</h4>
-                                <p class="card-text">simboliza la belleza, seducción, el hogar, la tentación y la
-                                    juventud.</p>
-                                <h5 class="card-title">$3500,00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="../images/nativo.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4>NATIVO AMERICANO</h4>
-                                <p class="card-text">tiene una enorme fuerza a nivel de diseño, simboliza la aventura,
-                                    los viajes y el poder de la familia.</p>
-                                <h5 class="card-title">$3000,00</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <img src="../images/dos mujeres.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4>PIN UP</h4>
-                                <h5 class="card-title">$4500,00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="../images/caballo y herradura.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4>HERRADURA</h4>
-
-                                <p class="card-text">Un tatuaje de herradura es un símbolo de fortuna, riqueza,
-                                    prosperidad y buena suerte, además tiene afinidad con los caballos.</p>
-                                <h5 class="card-title">$1000,00</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="../images/daga.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h4>DAGA Y CORAZÓN</h4>
-                                <p class="card-text">Representa el desamor y traición pero con la agregación de los
-                                    listones representa a la lealtad.</p>
-                                <h5 class="card-title">$2500,00</h5>
-                            </div>
-                        </div>
-                    </div>
+            <div class="card">
+                <img src="../images/rana_japonesa.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>KAERU</h4>
+                    <p class="card-text">En la cultura Japonesa, la rana posee el significado de retorno,
+                        Es decir, las cosas buenas regresan.</p>
+                    <h5 class="card-title">$5500,00</h5>
                 </div>
             </div>
+
+
+            <div class="card">
+                <img src="../images/japonesa.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>PIN UP</h4>
+                    <p class="card-text">simboliza la belleza, seducción, el hogar, la tentación y la
+                        juventud.</p>
+                    <h5 class="card-title">$3500,00</h5>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/nativo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>NATIVO AMERICANO</h4>
+                    <p class="card-text">tiene una enorme fuerza a nivel de diseño, simboliza la aventura,
+                        los viajes y el poder de la familia.</p>
+                    <h5 class="card-title">$3000,00</h5>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/mono.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>GORILA</h4>
+                    <p>Los gorilas son símbolo de sabiduría y ganas de aprender y hacer. Nos recuerdan que en las
+                        civilizaciones las nuevas generaciones pueden y deben aprender mucho de las antiguas.</p>
+                    <h5 class="card-title">$4500,00</h5>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../images/caballo y herradura.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>HERRADURA</h4>
+
+                    <p class="card-text">Un tatuaje de herradura es un símbolo de fortuna, riqueza,
+                        prosperidad y buena suerte, además tiene afinidad con los caballos.</p>
+                    <h5 class="card-title">$1000,00</h5>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="../images/daga.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4>DAGA Y CORAZÓN</h4>
+                    <p class="card-text">Representa el desamor y traición pero con la agregación de los
+                        listones representa a la lealtad.</p>
+                    <h5 class="card-title">$2500,00</h5>
+                </div>
+            </div>
+
+
         </section>
         <div class="container-fluid contenedorPaginacion">
 
@@ -156,69 +146,68 @@
         </div>
     </main>
     <footer>
+        <div class="col">
+            <h4>TATTOOING POSADAS</h4>
+            <div class="descripcion-footer">
+                <p>Descubrí la inspiración en los trabajos realizados y animate a visitar el estudio para elegir que te
+                    gustaría tatuarte.</p>
+            </div>
 
-        <div class="container-fluid">
+        </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <h4 class="m-0">TATTOOING POSADAS</h4>
-                    <div class="h-75">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Accusantium magni quasi
-                            perspiciatis, ad
-                            autem!</p>
-                    </div>
+        <div class="col">
+            <h4>DATOS DE CONTACTO</h4>
+            <div class="info-contacto">
+                <p class="bi bi-telephone-fill"> Teléfono: +549 3764-814979 </p>
+                <p class="bi bi-geo-alt-fill"> Calle 71 n°: 6538, Posadas Misiones </p>
+                <p class="bi bi-envelope-fill"> Tattooing@gmail.com</p>
+            </div>
+        </div>
 
-                </div>
+        <div class="col">
+            <h4>APARTADOS WEB</h4>
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./trabajos.html">TRABAJOS</a>
+                </li>
+                <li>
+                    <a class="activo" href="./disenos.html">DISEÑOS</a>
+                </li>
+                <li>
+                    <a href="./Artista.html">ARTISTA</a>
+                </li>
+                <li>
+                    <a href="./contactos.html">CONTACTO</a>
+                </li>
+            </ul>
 
-                <div class="col-sm ">
-                    <h4 class="m-0">DATOS DE CONTACTO</h4>
-                    <div class="contenedorContacto">
-                        <i class="bi bi-telephone-fill"> 952 476 811 - 646 835 944</i>
-                        <i class="bi bi-geo-alt-fill"> Calle 71 n°: 6538, Posadas Misiones </i>
-                        <i class="bi bi-envelope-fill"> Tattooing@gmail.com</i>
-                    </div>
-                </div>
+        </div>
 
-                <div class="col-sm ">
-                    <h4>APARTADOS WEB</h4>
-                    <ul class="p-0 contenedorApartadoWeb">
-                        <li>
-                            <a href="../index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="../views/trabajos.html">TRABAJOS</a>
-                        </li>
-                        <li>
-                            <a class="activo" href="../views/disenos.html">DISEÑOS</a>
-                        </li>
-                        <li>
-                            <a href="../views/Artista.html">ARTISTA</a>
-                        </li>
-                        <li>
-                            <a href="../views/contactos.html">CONTACTO</a>
-                        </li>
-                    </ul>
 
-                </div>
-
-                <div class="col-sm">
-
-                    <div class="redesFooter">
-                        <h4>SEGUINOS EN</h4>
-                        <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank"><i
-                                class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!"
-                    class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <div class="col">
+            <h4>SEGUINOS EN</h4>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
+                    <i class="bi bi-instagram"></i>
                 </a>
             </div>
+
+        </div>
+
+        <div class="col">
+            <p class="diseñado"> DISEÑO: ACOSTA MAURO</p>
+        </div>
+
+
+        <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!" class="whatsapp"
+            target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+        </div>
 
     </footer>
     <!-- JavaScript Bundle with Popper -->

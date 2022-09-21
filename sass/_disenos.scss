@@ -1,45 +1,65 @@
+.titulo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
 .contenedorDiseños {
-  
-    .row {
-        .col {
-            display: flex;
-            justify-content: space-around;
+    display: grid;
+    gap: 30px;
+    margin: 1rem auto;
+    width: 80%;
 
-            @media (max-width:425px) {
-                margin-top: $marginTopDiseño;
-            }
 
-            @media(min-width:426px) {
-                margin-top: $marginTopDiseño;
-            }
 
-            .card {
-                
-                @media(min-width:1024px)and (max-width:1440px)  {
-                    width:18rem;
-                }
-                width: 23rem;
-                img {
-                  
-                    @media(min-width:1024px) and (max-width:1440px) {
-                        width:18rem;
-                        height: 16rem;
-                    }
-                    width: 23rem;
-                    height: 24rem;
-                    object-fit: fill;
-                }
-            
-            }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+
+    @media (min-width:768px) {
+        img {
+            height: 800px;
         }
     }
 
-    
+    @media (min-width:1024px) {
+        grid-template-columns: repeat(3, 1fr);
+
+        img {
+
+            height: 350px;
+
+        }
+    }
+
+    @media (min-width:1440px) {
+
+        img {
+
+            height: 500px;
+
+        }
+    }
+
+
+
 }
-.contenedorPaginacion{
+
+.contenedorPaginacion {
     margin-top: 3rem;
     margin-bottom: 2rem;
-    ul{
+
+    ul {
         background-color: rgba(0, 0, 0, 0.15);
     }
 }

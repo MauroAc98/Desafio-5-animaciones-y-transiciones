@@ -15,76 +15,74 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./estilos/style.css">
 
 </head>
 
 <body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        </div>
+
+    </nav>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <div class="contenedorLogo">
-                    <a class="navbar-brand d-flex align-items-center" href="./index.html">
-                        <img src="./images/logo.png" alt="">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link activo" aria-current="page" href="./index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./views/trabajos.html">TRABAJOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./views/disenos.html">DISEÑOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./views/Artista.html">ARTISTA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./views/contactos.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header shadow">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                    <a href="./index.html"><img src="./images/logo.png" alt=""></a>
             </div>
-        </nav>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a class="active" href="./index.html">INICIO</a></li>
+                    <li><a href="./views/trabajos.html">TRABAJOS</a></li>
+                    <li><a href="./views/disenos.html">DISEÑOS</a></li>
+                    <li><a href="./views/Artista.html">ARTISTA</a></li>
+                    <li><a href="./views/contactos.html">CONTACTO</a></li>
+                </ul>
+
+            </div>
+        </div>
     </header>
     <main class="contenedorMainIndex">
         <section class="seccionLugarEstudio">
-            <div class="seccionLugarEstudioTitulo">
-                <h2 class="me-2">TATTOOING POSADAS</h2>
+            <div class="seccionLugarEstudioTitulo" data-aos="zoom-in">
+                <h2>TATTOOING POSADAS</h2>
                 <h3>STUDIO</h3>
             </div>
         </section>
 
         <section class="contenedorConoceArtista">
-            <div class="container text-center mt-5">
+            <div class="container text-center">
                 <div class="row">
                     <div class="col">
-                        <h1> CONOCE A GASTÓN URBIETA Y SU ESTUDIO</h1>
+                        <h1> CONOCE A GASTÓN Y SU ESTUDIO</h1>
                         <img src="./images/logo.png">
-                        <div class="contenedorParrafoIndex">
-                            <p> <strong>"TATTOO ING POSADAS"</strong> es un estudio artístico de tatuajes
-                                fundado en 2019 bajo el pseudónimo
-                                de la
-                                Ciudad Natal del artista. Desde sus comienzos como tatuador, y desde la fecha de la
-                                apertura del estudio, <strong>GASTÓN URBIETA</strong> ha sido reconocido en la ciudad
-                                gracias
-                                al crecimiento artístico y técnico de sus tatuajes.</p>
 
-                            <p> Cuenta con experiencia en
+                        <p data-aos="fade-down">"TATTOO ING POSADAS" es un <strong>estudio artístico de tatuajes
+                                fundado en 2019</strong> bajo el pseudónimo
+                            de la
+                            Ciudad Natal del artista. Desde sus comienzos como tatuador, y desde la fecha de la
+                            apertura del estudio, <strong>GASTÓN URBIETA</strong> ha sido reconocido en la ciudad
+                            gracias
+                            al crecimiento artístico y técnico de sus tatuajes.</p>
+
+                        <p data-aos="fade-up"> <Strong>Cuenta con experiencia en
                                 diferentes tipos
-                                de estilos, desde lo más vintage a lo más rompedor y contemporáneo. A través de ésta
-                                web, se
-                                espera que descubras la inspiración en sus
-                                trabajos y te
-                                animes a visitarlo para contarle que te gustaría tatuarte.</p>
-                        </div>
+                                de estilos</Strong>, desde lo más vintage a lo más rompedor y contemporáneo. A través de
+                            ésta
+                            web, se
+                            espera que descubras la inspiración en sus
+                            trabajos y te
+                            animes a visitarlo para contarle que te gustaría tatuarte.</p>
+
 
                     </div>
 
@@ -95,122 +93,122 @@
         </section>
 
         <section class="sectionImgArtistaLocal">
-            <div class="container  mt-5 mb-5">
-                <div class="row">
-                    <div class="col-6 contenedorLocal">
-                        <figure>
-                            <img src="./images/local.jpeg">
-                            <div class="tituloLocal">
-                                <h2>EL ESTUDIO</h2>
-                                <h5>B° San Francisco de Asis, Posadas</h5>
-                            </div>
-                        </figure>
 
-                    </div>
-                    <div class="col-3 contenedorArtista">
-                        <div class="row d-flex flex-column">
-                            <div class="col">
-                                <figure>
-                                    <img src="./images/imagen1.png">
-                                    <div class="tituloArtista">
-                                        <h2>ARTIST TATTOO</h2>
-                                        <h5>Gastón Urbieta</h5>
-                                    </div>
-                                </figure>
-                            </div>
-                            <div class="col">
-                                <figure>
-                                    <img src="./images/imagen2.png">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 contenedorArtista d-flex">
-                        <div class="row d-flex flex-column">
-                            <div class="col">
-                                <figure>
-                                    <img src="./images/imagen3.png">
-                                </figure>
-                            </div>
-                            <div class="col linkTrabajos">
-                                <h4>TRABAJOS</h4>
-                                <h6>Visita la galería de trabajos</h6>
-                                <a class="btn btn-outline-secondary" href="./views/trabajos.html"
-                                    role="button">TRABAJOS</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col">
+
+                <img src="./images/local.jpeg">
+                <div class="titulo-img">
+                    <h2>EL ESTUDIO</h2>
+                    <h5>B° San Francisco de Asis, Posadas</h5>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <img src="./images/imagen1.png">
+                <div class="titulo-img">
+                    <h2>ARTIST TATTOO</h2>
+                    <h5>Gastón Urbieta</h5>
                 </div>
             </div>
-        </section>
+            <div class="col">
+                <img src="./images/imagen2.png">
+                <div class="titulo-img">
+                    <h2>ARTIST TATTOO</h2>
+                    <h5>Gastón Urbieta</h5>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/imagen3.png">
+                <div class="titulo-img">
+                    <h2>ARTIST TATTOO</h2>
+                    <h5>Gastón Urbieta</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="contenedor-galeria">
+                    <h4>TRABAJOS</h4>
+                    <h6>Visita la galería de trabajos</h6>
+                    <a class="boton-Trabajos" href="./views/trabajos.html" role="button">TRABAJOS</a>
+                </div>
 
+            </div>
+        </section>
     </main>
     <footer>
+        <div class="col">
+            <h4>TATTOOING POSADAS</h4>
+            <div class="descripcion-footer">
+                <p>Descubrí la inspiración en los trabajos realizados y animate a visitar el estudio para elegir que te
+                    gustaría tatuarte.</p>
+            </div>
 
-        <div class="container-fluid">
+        </div>
 
-            <div class="row">
-                <div class="col-sm">
-                    <h4 class="m-0">TATTOOING POSADAS</h4>
-                    <div class="h-75">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Accusantium magni quasi
-                            perspiciatis, ad
-                            autem!</p>
-                    </div>
+        <div class="col">
+            <h4>DATOS DE CONTACTO</h4>
+            <div class="info-contacto">
+                <p class="bi bi-telephone-fill"> Teléfono: +549 3764-814979 </p>
+                <p class="bi bi-geo-alt-fill"> Calle 71 n°: 6538, Posadas Misiones </p>
+                <p class="bi bi-envelope-fill"> Tattooing@gmail.com</p>
+            </div>
+        </div>
 
-                </div>
+        <div class="col">
+            <h4>APARTADOS WEB</h4>
+            <ul>
+                <li>
+                    <a class="activo" href="./index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="./views/trabajos.html">TRABAJOS</a>
+                </li>
+                <li>
+                    <a href="./views/disenos.html">DISEÑOS</a>
+                </li>
+                <li>
+                    <a href="./views/Artista.html">ARTISTA</a>
+                </li>
+                <li>
+                    <a href="./views/contactos.html">CONTACTO</a>
+                </li>
+            </ul>
 
-                <div class="col-sm ">
-                    <h4 class="m-0">DATOS DE CONTACTO</h4>
-                    <div class="contenedorContacto">
-                        <i class="bi bi-telephone-fill"> Teléfono: 952 476 811 - 646 835 944</i>
-                        <i class="bi bi-geo-alt-fill"> Calle 71 n°: 6538, Posadas Misiones </i>
-                        <i class="bi bi-envelope-fill"> Tattooing@gmail.com</i>
-                    </div>
-                </div>
+        </div>
 
-                <div class="col-sm ">
-                    <h4>APARTADOS WEB</h4>
-                    <ul class="p-0 contenedorApartadoWeb">
-                        <li>
-                            <a class="activo" href="./index.html">INICIO</a>
-                        </li>
-                        <li>
-                            <a href="./views/trabajos.html">TRABAJOS</a>
-                        </li>
-                        <li>
-                            <a href="./views/disenos.html">DISEÑOS</a>
-                        </li>
-                        <li>
-                            <a href="./views/Artista.html">ARTISTA</a>
-                        </li>
-                        <li>
-                            <a href="./views/contactos.html">CONTACTO</a>
-                        </li>
-                    </ul>
 
-                </div>
-
-                <div class="col-sm">
-
-                    <div class="redesFooter">
-                        <h4>SEGUINOS EN</h4>
-                        <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank"><i
-                                class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </div>
-
-                </div>
-
-                <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!"
-                    class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <div class="col">
+            <h4>SEGUINOS EN</h4>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/profile.php?id=1817661939" target="_blank"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/tattooing_posadas/" target="_blank">
+                    <i class="bi bi-instagram"></i>
                 </a>
             </div>
 
+        </div>
+
+        <div class="col">
+            <p class="diseñado"> DISEÑO: ACOSTA MAURO</p>
+        </div>
+
+
+        <a href="https://wa.me/+5493764814979?text=Hola,%20Necesito%20más%20el%20información..!" class="whatsapp"
+            target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i>
+        </a>
+        </div>
+
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            mirror: true
+        });
+    </script>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">

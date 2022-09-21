@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import "variables";
 @import "encabezado";
 @import "index";
@@ -18,11 +18,11 @@
 
 @font-face {
     font-family: vtks;
-    src: url('../font-title/vtks-tatuage2.regular.ttf'), ;
+    src: url('../font-title/Dieselpower.ttf'), ;
 }
 
 body {
-    font-family: 'Cinzel', serif;
+    font-family: 'Poppins', sans-serif;
     background-image: url(../images/fondoTatuajes.png);
 
     display: flex;
@@ -31,25 +31,42 @@ body {
 
     h1 {
         font-family: vtks;
-        font-size: 3rem;
-        font-weight: 900;
-        text-shadow: rgba(2, 2, 2, 0.342) 0.1em 0.1em 0.2em;
+        font-size: 42px;
+        text-shadow: rgba(5, 5, 5, 0.3) 0.1em 0.1em 0.2em;
     }
 }
 
 .card {
-    transition-duration: .9s;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+
+    .card-body {
+        p {
+            color: #6a6a6a;
+        }
+
+        h4 {
+            font-family: vtks;
+            text-shadow: rgba(5, 5, 5, 0.30) 0.1em 0.1em 0.2em;
+            font-size: 2rem;
+        }
+
+        h5 {
+            font-weight: 900;
+            text-shadow: rgba(5, 5, 5, 0.30) 0.1em 0.1em 0.2em;
+            font-size: 1.5rem;
+        }
+    }
 
     &:hover {
-        transform: scale(1.1);
-        border-radius: 5%;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
     }
 
     img {
         transition-duration: .9s;
 
         &:hover {
-            transform: scale(1);
             outline: 2px solid rgba(255, 255, 255, 0.33);
             outline-offset: -10px;
         }

@@ -1,4 +1,7 @@
 .container-contacto {
+    h3 {
+        font-family: vtks;
+    }
 
     h2,
     p {
@@ -10,12 +13,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+
         @media (max-width:425px) {
             height: 30rem;
             margin-bottom: 4rem;
             text-align: center;
         }
+
+
 
         background-color: $estiloFondo;
     }
@@ -37,6 +42,7 @@
             justify-content: space-between;
             text-align: center;
 
+
             @media (max-width:425px) {
                 height: 9rem;
                 display: flex;
@@ -48,9 +54,10 @@
         }
     }
 
-    .ubicacion{
+    .ubicacion {
         margin-bottom: 2rem;
-        iframe{
+
+        iframe {
             border: 6px solid rgba(0, 0, 0, 0.11);
         }
     }
